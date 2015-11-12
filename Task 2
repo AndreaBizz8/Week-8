@@ -1,0 +1,40 @@
+class Car():
+    
+    def __init__(self, brand, maxspeed, mileage):
+        self.brand=brand
+        self.maxspeed=maxspeed
+        self.mileage = mileage
+        self.moving = moving
+
+    def showDetails(self):
+        print ("Brand:\t\t", self.brand)
+        print ("Maxspeed:\t", self.maxspeed)
+        print ("Mileage:\t", self.mileage)
+        
+    def getBrand(self):
+        return self.brand
+    
+    def getMaxSpeed(self):
+        return self.maxspeed
+    
+    def getMileage(self):
+        return self.mileage
+
+    def changeMilage(self):
+        x=print ("Is the car moving? Y/N")
+        if x == "Y":
+            move= int(input("how many miles have you drive?"))
+            
+    
+
+from Car import*
+c1= Car("Ford", 180, 25000)
+c2= Car("BMW", 200, 15000)
+c3= Car("Fiat", 165, 500)
+c4= Car("Lancia", 170, 12000)
+c5= Car("Audi", 185, 18000)
+
+car = [c1, c2, c3, c4, c5]
+for c in car:
+        print()
+        c.showDetails()
